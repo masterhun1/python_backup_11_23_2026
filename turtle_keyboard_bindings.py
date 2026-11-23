@@ -1,0 +1,50 @@
+import turtle
+from turtle import *
+
+setup(500, 500)
+Screen()
+turtle = turtle.Turtle()
+turtle.speed(0)
+showturtle()
+
+
+def up():
+    turtle.setheading(90)
+    turtle.forward(100)
+
+
+def down():
+    turtle.setheading(270)
+    turtle.forward(100)
+
+
+def left():
+    turtle.setheading(180)
+    turtle.forward(100)
+
+
+def right():
+    turtle.setheading(0)
+    turtle.forward(100)
+
+def clear():
+    #turtle.clear()
+    turtle.reset()
+    bgcolor("white")
+    color("black")
+
+def alt():
+    color("white")
+    bgcolor("black")
+
+
+
+listen()
+onkey(up, 'Up')
+onkey(down, 'Down')
+onkey(left, 'Left')
+onkey(right, 'Right')
+onkey(clear, "c")
+onkey(alt, "b")
+
+mainloop()
